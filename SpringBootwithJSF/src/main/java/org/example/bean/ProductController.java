@@ -1,11 +1,11 @@
 package org.example.bean;
 
-import jakarta.annotation.PostConstruct;
 import org.example.entity.Product;
 import org.example.service.ProductService;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import jakarta.annotation.PostConstruct;
 import java.util.List;
 
 @Scope(value = "session")

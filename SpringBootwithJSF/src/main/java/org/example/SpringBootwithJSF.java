@@ -7,10 +7,10 @@ import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class SpringBootwithJsf {
+public class SpringBootwithJSF {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootwithJsf.class, args);
+        SpringApplication.run(SpringBootwithJSF.class, args);
     }
 
     @Bean
@@ -19,6 +19,5 @@ public class SpringBootwithJsf {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(servlet, "*.jsf");
         return servletRegistrationBean;
     }
-
 
 }
