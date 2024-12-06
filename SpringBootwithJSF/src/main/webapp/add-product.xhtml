@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+   <title>Add Product</title>
+</h:head>
+<h:body>
+   <h1>Add Product</h1>
+   <h:form>
+      <h:panelGrid columns="2">
+         <h:outputLabel for="name" value="Name:"/>
+         <h:inputText id="name" value="#{productController.product.name}"/>
+         <h:outputLabel for="price" value="Price:"/>
+         <h:inputText id="price" value="#{productController.product.price}"/>
+      </h:panelGrid>
+      <h:commandButton value="Save" action="#{productController.addProduct}"/>
+      <h:commandButton value="Back to Product List" action="products"/>
+   </h:form>
+</h:body>
+</html>
